@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header {
+    position: relative;
+    height: 960px;
+    background-color: #0D5E3C;
+    background-image: url(img/image\ 2.png);
+    background-blend-mode: multiply;
+    overflow: hidden;
+    margin-bottom: 190px;
+    transition: 0.5s background-color ease-in-out;
+}
+
+.header::before {
+    content:"";
+    display: block;
+    background-color: #138F5B;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    width: 60%;
+    height: 100%;
+    transform: skewX(-15deg) scaleX(1.3);
+    transition: 0.5s background-color ease-in-out;
+}
+
+.header-green {
+    background-color: #0D5E3C;
+}
+
+.header-green .header-logo-text {
+    color:#0ED984;
+}
+
+.header-green .header-content-newbies {
+    color:#0ED984;
+    border-bottom: 3px solid #0ED984;
+}
+
+.header-green::before {
+    background-color: #138F5B
+}
+
+.header-blue {
+    background-color: #0D41A7;
+}
+
+.header-blue .header-logo-text {
+    color: #0D41A7;
+}
+
+.header-blue .header-content-newbies {
+    color: #0D41A7;
+    border-bottom: 3px solid #0D41A7;
+}
+
+.header-blue::before {
+    background-color: #173673;
+}
+
+.header-pink {
+    background-color: #D72DF3;
+}
+
+.header-pink .header-logo-text {
+    color: #D72DF3;
+}
+
+
+
+.header-pink .header-content-newbies {
+    color: #D72DF3;
+    border-bottom: 3px solid #D72DF3;
+}
+
+.header-pink::before {
+    background-color: #630773;
+}
+
+.header-slider {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-50%);
+}
+
+.header-slider-arrow {
+    position: relative;
+    z-index: 1;
+    border: none;
+    outline: none;
+}
+
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    padding-top: 70px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 210px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.header-logo-icon {
+    padding: 0 5px;
+}
+
+.header-logo-text {
+    color: #0ED984;
+    font-weight: 700;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+
+.header-content-newbies {
+    display: inline-block;
+    color: #0ED984;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 3px solid #0ED984;
+}
+
+.header-content-title {
+    color: #fff;
+    font-size: 96px;
+    font-weight: 700;
+    margin-bottom: 70px;
+}
+
+.header-content-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-content-info-text {
+    color: #fff;
+    font-size: 20px;
+    text-shadow: #000 1px 1px 0, #000 -1px -1px 0, #000 -1px 1px 0, #000 1px -1px 0;
+}
+
+.header-content-info-btn {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: transparent;
+    border: 2px  dashed #fff;
+    padding: 25px 50px;
+    margin-bottom: 145px;
+}
+
+.header-content-slider-dots {
+    display: flex;
+
+}
+
+.test {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin-right: 20px;
+}
+
+.test-active {
+    background-image:url(img/logo.png);
+    background-size: cover;
+    border: none;
+}
+
+
+.training-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.training-item-img {
+    margin-bottom: 40px;
+}
+
+.training-item-title {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.training-item-title-color-green {
+    color: #0ED984;
+}
+
+.training-item-title-color-blue {
+    color: #3577F6 ;
+}
+
+.training-item-text {
+    color: #615D5D;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
